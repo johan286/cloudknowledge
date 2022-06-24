@@ -18,10 +18,7 @@ pipeline {
  } 
  stage('batch'){ 
  steps{ 
-	bat "dir" 
- 	bat "cd" 
-	bat "ping www.google.com" 
-
+	echo " predefined variable $BUILD_NUMBER $WORKSPACE " 
  } 
 } 
 }
