@@ -1,5 +1,8 @@
 pipeline { 
  agent any  
+ environment{
+	name="ARBAZ"
+ }
  stages { 
  stage('Build') {  
  steps { 
@@ -19,6 +22,7 @@ pipeline {
  stage('batch'){ 
  steps{ 
 	echo " predefined variable $BUILD_NUMBER $WORKSPACE " 
+	echo " extrernal variable $name
  } 
 } 
 }
