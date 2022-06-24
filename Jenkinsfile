@@ -16,6 +16,12 @@ pipeline {
  	echo "this is Deploy stage"  
  } 
  } 
+ stage('batch'){ 
+ steps{ 
+	bat "dir" 
+ 	bat "cd" 
+	bat "ping www.google.com" 
+
  } 
 } 
 
