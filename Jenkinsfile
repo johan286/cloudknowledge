@@ -22,7 +22,7 @@ pipeline {
  stage('batch'){ 
  steps{ 
 	echo " predefined variable $BUILD_NUMBER $WORKSPACE " 
-	echo " extrernal variable $name
+	echo " extrernal variable $name"
  } 
 } 
 }
